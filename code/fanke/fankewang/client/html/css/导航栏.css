@@ -1,0 +1,576 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.headerTop {
+    width: 1200px;
+    margin: 0 auto;
+    background: #f7f7f7;
+    height: 31px;
+    line-height: 32px;
+    color: #9f9f9f;
+}
+
+a {
+    text-decoration: none;
+    color: #9f9f9f;
+}
+
+.mapDropTitle {
+    background: url(http://i4.vanclimg.com/cms/20160912/notice.png) no-repeat scroll 0px 6px;
+    width: 55px;
+    padding-left: 26px;
+    text-align: left;
+    font-size: 12px;
+    line-height: 30px;
+    /* float: right; */
+}
+
+#vanclCustomer {
+    width: 90px;
+    height: 30px;
+    float: right;
+}
+
+.payattention {
+    float: right;
+}
+
+.minweixin {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-top: 3px;
+}
+
+.weibo {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 3px 1px 0px 2px;
+}
+
+.weixin {
+    display: none;
+    position: absolute;
+    top: 37px;
+    left: 1206px;
+    width: 140px;
+    z-index: 1000;
+}
+
+.minweixin:hover .weixin {
+    display: block;
+}
+
+img {
+    width: 100%;
+}
+
+.headerTopLeft {
+    float: right;
+    font-size: 12px;
+    width: 270px;
+    margin-right: 8px;
+    color: #9f9f9f;
+}
+
+.recommendArea {
+    float: right;
+    color: #9f9f9f;
+}
+
+#welcome {
+    float: right;
+    margin-right: 8px;
+    color: #9f9f9f;
+
+}
+
+.logoArea {
+    width: 1200px;
+    height: 62px;
+    margin: 20px auto 25px;
+}
+
+.vanclSearch {
+    width: 438px;
+    float: right;
+}
+
+.search {
+    float: right;
+    margin-top: 5px;
+    margin-right: 20px;
+}
+
+#shoppingCarNone {
+    width: 105px;
+    height: 27px;
+    border: 1px solid #c1383e;
+    background: url(http://i2.vanclimg.com/cms/20150228/vanclsprite.png) no-repeat scroll -154px 0px;
+    position: relative;
+    z-index: 10;
+    float: right;
+    top: 5px;
+}
+
+#shoppingCarNone p a {
+    padding-left: 29px;
+    padding-top: 6px;
+    font-size: 12px;
+    color: white;
+}
+
+/* #shoppingCarNone p {
+    position: absolute;
+    top: -15px;
+} */
+
+.hotWord {
+    width: 440px;
+    padding-top: 5px;
+    line-height: 18px;
+    color: #727171;
+    padding-left: 15px;
+    font-size: 12px;
+}
+
+.hotWord a {
+    margin: 0 5px;
+}
+
+.full .navlist {
+    width: 1000px;
+    height: 22px;
+    margin: 30px auto;
+    padding-left: 200px;
+    position: relative;
+    z-index: 300;
+}
+
+.navlist {
+    width: 1006px;
+    height: 22px !important;
+    margin: 30px auto !important;
+    padding-left: 200px !important;
+    position: relative !important;
+    z-index: 300 !important;
+}
+
+.full .navlist ul li.vancllogo_Con {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0px;
+    background: none;
+}
+
+.navlist ul li.vancllogo_Con {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0px;
+    background: none;
+    width: 245px;
+    border: none;
+}
+
+.full .navlist ul li {
+    float: left;
+    width: 99px;
+    line-height: 22px;
+    padding: 0px 0px 10px;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    position: relative;
+    z-index: 220;
+
+}
+
+.navlist ul li {
+    float: left;
+    width: 94px;
+    line-height: 22px;
+    padding: 0px 0px 10px;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    position: relative;
+    z-index: 220;
+    /* border-right: 1px solid #7f7f7f; */
+}
+
+li {
+    list-style: none;
+}
+
+.daohanglan li {
+    border: none;
+}
+.subNav{
+    background: white;
+    position: absolute;
+}
+.subNav span {
+    display: block;
+    width: 100%;
+    height: 5px;
+    border-top: 5px solid #B81C22;
+}
+/***************底部*************/
+footer{
+    
+    margin-top: 100px;
+}
+.footop{
+    width: 1200px;
+    height: 300px;
+    border: 1px solid #dadadb;
+    margin: auto;
+}
+
+.onlineTime {
+    margin: 0px auto;
+    width: 156px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+    background: #b81c22;
+    color: #ffffff;
+}
+p.onlineCustomer {
+    text-align: center;
+    font-size: 14px;
+    color: #727171;
+    line-height: 26px;
+    margin: 15px auto 30px;
+}
+
+.ftu ul li p {
+    text-align: center;
+    font-size: 14px;
+    color: #727171;
+    line-height: 26px;
+}
+.ftu{
+    display: flex;
+    justify-content: space-around;
+}
+.ftu li{
+    width: 399px;
+    height: 180px;
+    margin-top: 20px;
+}
+.qitian{
+    text-align: center;
+    font-size: 14px;
+    color: #727171;
+    line-height: 26px;
+}
+.gouwu{
+        text-align: center;
+        font-size: 14px;
+        color: #727171;
+        line-height: 26px;
+}
+.vanclOthers {
+    height: 26px;
+    padding: 17px 0px 14px;
+    background: #f8f8f8;
+    width: 95%;
+    margin: 20px 30px;
+}
+.vanclOthers ul li {
+    width: 153px;
+    text-align: center;
+    line-height: 26px;
+    border-right: 1px solid #dadadb;
+    margin-right: 0px;
+    float: left;
+}
+.foobot{
+    border-top: 1px solid black;
+    width: 100%;
+    margin-top: 30px;
+}
+.foobotimg{
+    width: 840px;
+    height: 200px;
+    margin: auto;
+}
+.foobotimg img{
+    width: 100%;
+}
+/* 楼层 */
+.BayWindow {
+    width: 73px;
+    height: 281px;
+    border: 1px solid #b81b22;
+    border-bottom: none;
+    margin-bottom: 60px;
+}
+.BayWindow ul li {
+    width: 73px;
+    border-bottom: 1px solid #b81b22;
+}
+/* 主体部分 */
+main{
+    /* height: 1000px; */
+}
+#box{
+    width: 1200px;
+    height: 535px;
+    overflow: hidden;
+    position: relative;
+    z-index: 5;
+    margin: auto;
+}
+.box-btn-left:hover{
+    background: url(http://i3.vanclimg.com/cms/20160918/focus_lr0918.png) no-repeat scroll -50px 0px;
+    outline: none;
+    border: none;
+}
+.MainBody{
+    width: 1200px;
+    margin:30px auto;
+}
+.new_miaosha_area h2 {
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    font-family: "Microsoft YaHei";
+    color: #9a9a9a;
+    font-size: 18px;
+}
+.new_miaosha_title {
+    background: url(https://i2.vanclimg.com/cms/20191203/mm.jpg) no-repeat scroll 0px 0px;
+}
+span#seckill_2017_timecounting {
+    color: #a10000;
+    margin-left: 20px;
+    float: right;
+    padding-right: 30px;
+}
+span#seckill_2017_timecounting em{
+    padding-right: 40px;
+}
+.wordBox{
+    padding-right: 106px;
+    color: white;
+}
+#seckill_2017_container {
+    width: 1200px;
+    color: #474747;
+    font-weight: bold;
+    margin: 0 auto;
+    font-family: "Microsoft YaHei";
+}
+#seckill_2017_container ul {
+    overflow: hidden;
+    margin: 10px 0 0 0;
+    padding: 0;
+    width: 1210px;
+}
+#seckill_2017_container ul li {
+    float: left;
+    width: 232px;
+    margin-right: 10px;
+    list-style: none;
+}
+#seckill_2017_container ul li img {
+    width: 232px;
+    height: 232px;
+}
+#seckill_2017_container ul li .new-miaosha-productname {
+    font-size: 16px;
+    margin-top: 10px;
+    height: 45px;
+    font-weight: normal;
+}
+#seckill_2017_container ul li .new-miaosha-price {
+    position: relative;
+    /* margin-top: 10px; */
+}
+#seckill_2017_container ul li .new-miaosha-price .new-miaosha-saleprice {
+    display: block;
+    color: #bb2b34;
+    font-size: 16px;
+}
+#seckill_2017_container ul li .new-miaosha-price .new-miaosha-afterdeposit {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+#seckill_2017_container ul li .new-miaosha-price .new-miaosha-oldprice {
+    display: block;
+    color: #d3d3d3;
+    font-size: 14px;
+    text-decoration: line-through;
+    font-weight: normal;
+}
+/* 大图部分 */
+.picture{
+    width: 1200px;
+    margin:30px auto;
+}
+.tu0,.tu1,.tu2,.tu3,.tu,.tu6,.tu7,.tu9,.tu10,.tu11,.tu12,.tu13,.tu14,.tu18,.tu19,.tu20,.tu21,.tu23,.tu24,.tu25,.tu26,.tu28,.tu29{width: 599px;float: left;} 
+.picture div{
+    margin-top: 20px;
+}
+.youxuan{
+    width: 1200px;
+    height: 600px;
+    margin: auto;
+}
+.youxuan h2 {
+    text-align: center;
+    line-height: 50px;
+    margin: 30px 0px;
+    font-family: "Microsoft YaHei";
+    color: #9a9a9a;
+    font-size: 18px;
+}
+.youxuan .liss0{
+    width: 599px;
+    float: left;
+}
+.youxuan .liss1{
+    width: 299px;
+    float: left;
+    margin-left: 10px;
+}
+.youxuan .liss2{
+    width: 299px;
+    position: absolute;
+    right: 444px;
+    top: 14266px;
+}
+.youxuan .liss3{
+    width: 289px;
+    float: left;
+    position: absolute;
+    right: 142px;
+    top: 14004px;
+}
+.youxuan img{
+    width: 100%;
+}
+/**/
+.youxuan2{
+    width: 1200px;
+    height: 530px;
+    margin: auto;
+}
+
+.youxuan2 .liss0{
+    width: 599px;
+    float: left;
+}
+.youxuan2 .liss1{
+    width: 299px;
+    float: left;
+    margin-left: 10px;
+}
+.youxuan2 .liss2{
+    width: 299px;
+    position: absolute;
+    right: 451px;
+    top: 14785px;
+}
+.youxuan2 .liss3{
+    width: 289px;
+    float: left;
+    position: absolute;
+    right: 142px;
+    top: 14525px;
+}
+.youxuan2 img{
+    width: 100%;
+}
+.youxuan li, .youxuan2 li{
+    border: 1px solid #d8d8d8fb;
+}
+.youxuan ul li h3 {
+    height: 28px;
+    padding: 10px 12px;
+    line-height: 28px;
+    /* border: 1px solid #e8e7ec; */
+    border-top: 0px;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    float: left;
+}
+.youxuan ul li span {
+    padding: 10px 12px;
+
+    float: right;
+    color: #a10000;
+    font-family: Arial;
+    line-height: 24px;
+    font-size: 14px;
+}
+.kuzi{
+    width: 1200px;
+    color: #474747;
+    font-weight: bold;
+    margin: 0 auto;
+    font-family: "Microsoft YaHei";
+}
+.kuzi ul{
+    overflow: hidden;
+    margin: 10px 0 0 0;
+    padding: 0;
+    width: 1210px;
+}
+.kuzi ul li{
+    float: left;
+    width: 285px;
+    height: 508px;
+    margin-right: 10px;
+    list-style: none;
+    border: 1px solid #d8d8d8fb;
+}
+.kuzi ul li h3{
+    height: 28px;
+    padding: 10px 12px;
+    line-height: 28px;
+    /* border: 1px solid #e8e7ec; */
+    border-top: 0px;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    float: left;
+}
+.kuzi ul li span {
+    padding: 10px 4px;
+
+    float: right;
+    color: #a10000;
+    font-family: Arial;
+    line-height: 24px;
+    font-size: 14px;
+}
+.gengduo{
+    height: 570px;
+        width: 1200px;
+        color: #474747;
+        font-weight: bold;
+        margin: 0 auto;
+        font-family: "Microsoft YaHei";
+}
+.gengduo h2 {
+    text-align: center;
+    line-height: 50px;
+    margin: 30px 0px;
+    font-family: "Microsoft YaHei";
+    color: #9a9a9a;
+    font-size: 18px;
+}
+.gengduo ul li{
+    float: left;
+}

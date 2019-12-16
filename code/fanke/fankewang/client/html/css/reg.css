@@ -1,0 +1,81 @@
+main{
+    margin: auto;
+    width: 1200px;
+    height: 1000px;
+}
+h1 {
+    height: 35px;
+    width: 415px;
+    float: right;
+    line-height: 35px;
+    margin: 0 100px 0 0;
+    border-bottom: 2px solid #b81e20;
+    /* padding-left: 10px; */
+    font-size: 20px;
+    color: #a2a2a2;
+    font-weight: bolder;
+}
+h1 span {
+    font-size: 14px;
+    float: right;
+}
+h1 span a {
+    color: #b52024;
+    margin: 0 0 0 3px;
+}
+.Let{
+    width: 465px;
+    height: 500px;
+    /* border-left: 1px solid #C3C3C3; */
+    float: left;
+    /* background-color: #F9F9F9; */
+    margin: 0 0 0 130px;
+}
+.Let img{
+    width: 465px;
+}
+.Rig{
+    width: 415px;
+    float: right;
+    margin: 10px 95px 0 0;
+
+}
+#yanz,#phoneID{
+    width: 260px;
+    border: solid 1px #cbcbcb;
+    height: 43px;
+    line-height: 43px;
+}
+#phoneyanID,#passwordID,#passwordB{
+    width: 402px;
+    border: solid 1px #cbcbcb;
+    height: 43px;
+    line-height: 43px;
+}
+.form-item{
+    background: #9A9A9A;
+    color: #FFFFFF;
+    width: 413px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+}
+.big span,.tiaokuan{
+    font-size: 12px;
+    color: #cbcbcb;
+}
+.phone,.phoneyan,.pas,.pasB{
+    margin: 10px 0;
+}
+.ma{
+    position: absolute;
+    top: 142px;
+    right: 262px;
+}
+.yan .yanspan{
+    position: absolute;
+    top: 188px;
+    right: 535px;
+    color: #b52024;
+    border: 1px solid #b52024;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>凡客登录</title>
+    <link rel="stylesheet" href="../html/css/login.css">
+    <script src="jquery-3.4.1.js"></script>
+    <script src="../html/lib/captcha.js"></script>
+    <script src="../html/lib/login.js"></script>
+</head>
+
+<body>
+    <div class="Top" style="width: 1200px;height: 56px;border-bottom: 1px solid black;margin:20px auto;">
+        <a href="./shouye.html">
+            <img src="../html/img/logo.jpg" style="width: 230px;float: left;"></a>
+    </div>
+    <div class="hopl" style="position: absolute;top: 40px;right: 159px;font-size: 12px;">帮助</div>
+    <!-- main -->
+    <main>
+        <h1>
+            凡客Vancl登录<span>没有帐户免费<a href="./register.html">注册</a></span>
+        </h1>
+        <div class="Let">
+            <img src="http://i1.vanclimg.com/cms/20160902/login120412_newlogo.jpg">
+        </div>
+        <div class="Rig">
+            <div class="big">
+                <div class="log">
+                    <div class="putong aciv">普通登录</div>
+                    <div class="kuaisu">快速登录</div>
+                </div>
+                <div class="dl">
+                    <div class="acivkp">
+                        <!--  -->
+                        <div class="username">
+                            <input type="text" placeholder="请输入用户名/手机号" id="usernameID">
+                        </div>
+                        <div class="phoneyan">
+                            <input type="text" placeholder="请输入密码" id="phoneyanID">
+                        </div>
+                    </div>
+                    <div class="kp">
+                        <div class="phone">
+                            <input type="text" placeholder="请输入手机号" id="phoneID">
+                            <input type="submit" value="获取短信验证码" id=""
+                                style="color: red;text-align: center;font-size: 12px;width: 125px;height: 45px;">
+                        </div>
+                        <div class="yan">
+                            <input type="text" name="" id="yanz" placeholder="验证码">
+                            <div class="ma"><canvas width="140" height="45" id="captcha"></canvas></div>
+                            <span class="yanspan">看不清？换一张</span>
+                        </div>
+
+                        <div class="phoneyan">
+                            <input type="text" placeholder="请输入手机验证码" id="phoneyanID">
+                        </div>
+                        <div class="zhaohui">
+                            <h4 style="color: #b81e20; float: right;">找回密码</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-item">
+                    <h3>登录</h3>
+                </div>
+                <div class="hezuo"><img src="../html/img/hezuo.jpg" alt=""></div>
+            </div>
+        </div>
+        <script>
+            $(() => {
+                $(".log").children().click(function () {
+                    $(this).addClass("aciv").siblings().removeClass("aciv");
+                    $(".dl").children().eq($(this).index()).attr("class", "acivkp").siblings().attr(
+                        "class", "kp")
+                })
+            })
+        </script>
+    </main>
+    <!-- 底部 -->
+    <div class="foobot">
+        <div class="foobotimg"><img src="../html/img/foot.jpg" alt=""></div>
+    </div>
+</body>
+
+</html>

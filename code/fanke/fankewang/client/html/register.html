@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link rel="stylesheet" href="../html/css/导航栏.css">
+    <link rel="stylesheet" href="../html/css/reg.css">
+    <script src="jquery-3.4.1.js"></script>
+    <script src="../html/lib/captcha.js"></script>
+    <script src="../html/lib/register.js"></script>
+</head>
+
+<body>
+    <!-- 顶部 -->
+    <div class="Top" style="width: 1200px;height: 56px;border-bottom: 1px solid black;margin:20px auto;">
+        <a href="http://127.0.0.1/code/fanke/fankewang/client/html/shouye.html">
+            <img src="../html/img/logo.jpg" style="width: 230px;float: left;"></a>
+    </div>
+<!-- main -->
+<main>
+        <h1>
+                注册新用户 <span>我已经注册，现在就<a href="./login.html">登录</a></span>
+            </h1>
+<div class="Let">
+    <img src="http://i1.vanclimg.com/cms/20160902/login120412_newlogo.jpg">
+</div>
+<div class="Rig">
+    <div class="big">
+        <div class="yan">
+            <input type="text" name="" id="yanz" placeholder="请输入验证码">
+            <span class="yanspan" ></span>
+            <div class="ma"><canvas width="140" height="45" id="captcha"></canvas></div>
+        </div>
+        <div class="phone">
+            <input type="text" placeholder="请输入手机号" id="phoneID">
+            <input type="submit" value="获取短信验证码" id="" style="color: red;text-align: center;font-size: 12px;width: 140px;height: 45px;">
+            <span class="phonespan">请填写真实的手机号，并进行验证</span>
+        </div>
+        <div class="phoneyan">
+            <input type="text" placeholder="请输入手机验证码" id="phoneyanID">
+            <span class="phonespanB">请输入接收到的手机验证码</span>
+        </div>
+        <div class="pas">
+            <input type="password" placeholder="请设置登录密码" id="passwordID">
+            <span class="paswspan">6-16位字符，可使用字母、数字或字符组合的</span>
+        </div>
+        <div class="pasB">
+                <input type="password" placeholder="请设置登录密码" id="passwordB">
+                <span class="paswspanB">请再次输入密码，两次密码必须一致</span>
+            </div>
+            <div class="tiaokuan">
+                    <div><input name="protocol" id="protocol" type="checkbox"> <label for="protocol">请阅读</label> <a href="http://help.vancl.com/Category/69-1.html" target="_blank">《VANCL凡客诚品服务条款》</a></div>
+                </div>
+                <div class="form-item"><span class="label"></span> 立即注册
+                </div>
+    </div>
+    <div class="hezuo"><img src="../html/img/hezuo.jpg" alt=""></div>
+</div>
+</main>
+    <!-- 底部 -->
+    <div class="foobot">
+        <div class="foobotimg"><img src="../html/img/foot.jpg" alt=""></div>
+    </div>
+</body>
+
+</html>
