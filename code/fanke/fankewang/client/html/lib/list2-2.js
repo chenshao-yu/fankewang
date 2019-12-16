@@ -123,8 +123,8 @@ $(() => {
         let srcx = $(this).children(".tupian")[0].querySelector("img").src
         let qgx = $(this).children().children(".qianggou").text()
         let titl = $(this).children(".title").text()
-        console.log(titl);
         let urlx = `src=${srcx}&qg=${qgx}&title=${titl}`;
+        console.log(urlx);
         window.location.href="http://127.0.0.1/code/fanke/fankewang/client/html/details.html?"+urlx;
     })
 
