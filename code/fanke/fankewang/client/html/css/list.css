@@ -17,6 +17,22 @@
     position: relative;
     text-align: center;
 }
+/* .bigtupian{
+    width:230px;
+    height: 430px;
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    display: none;
+    top: 0px;
+    left: 218px;
+}
+.bigtupian img{
+    width: 100%;
+}
+.tupian:hover.bigtupian{
+    display: block;
+} */
 .title{
     margin-top: 10px;
     padding: 0px 3px 5px;

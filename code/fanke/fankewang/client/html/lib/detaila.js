@@ -130,6 +130,7 @@ class fadManager {
                                         var data1 = item.split("=");
                                         var key = data1[0];
                                         var val = data1[1];
+                                        
                                         o[key] = val;
                                 })
                                 return o;

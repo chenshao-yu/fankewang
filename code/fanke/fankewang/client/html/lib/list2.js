@@ -61,6 +61,7 @@ $(() => {
         }).join("");
         let oul = `<ul>${html}</ul>`
         $(".Listpp").html(oul);
+        
     }
     /* 先给页面添加点击事件，当点击的时候获取页码值，根据该值发送网络请求 */
     let next = 0;
@@ -122,8 +123,9 @@ $(() => {
     $(".Listpp").on("click", ".item", function () {
         let srcx = $(this).children(".tupian")[0].querySelector("img").src
         let qgx = $(this).children().children(".qianggou").text()
+        let ggx = $(this).children().children("strong").text()
         let titl = $(this).children(".title").text()
-        let urlx = `src=${srcx}&qg=${qgx}&title=${titl}`;
+        let urlx = `src=${srcx}&qg=${qgx}&title=${titl}&gg=${ggx}`;
         console.log(urlx);
         window.location.href="http://127.0.0.1/code/fanke/fankewang/client/html/details.html?"+urlx;
     })
