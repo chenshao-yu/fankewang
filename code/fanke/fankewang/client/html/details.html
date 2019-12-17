@@ -17,126 +17,6 @@
 
         <style>
                 
-                /* .selSizeArea {
-                        overflow: hidden;
-                        margin-bottom: 15px;
-                        margin-top: 12px;
-                        *margin: 6px 0px 0px 0px;
-                        _zoom: 1;
-                }
-
-                .danpinColorTitle {
-                        float: left;
-                        color: #666666;
-                        line-height: 22px;
-                        padding-bottom: 10px;
-                }
-
-                .selSize {
-                        width: 335px;
-                        float: left;
-                }
-
-                .selSizeArea ul {
-                        margin: 0px;
-                }
-
-                .selSizeArea .selSize ul li {
-                        background: #FFFFFF;
-                        border: 1px solid #C8C8C8;
-                        color: #333333;
-                        cursor: pointer;
-                        padding: 0px;
-                        display: inline;
-                        float: left;
-                        height: 24px;
-                        line-height: 22px;
-                        margin-right: 5px;
-                        margin-bottom: 5px;
-                        text-align: center;
-                        /* position: relative; */
-                        *margin-bottom: 8px;
-                        *float: none;
-                        *display: inline-block;
-                        *display: inline;
-                        *zoom: 1;
-                }
-
-                .selSizeArea .selSize ul li p {
-                        display: block;
-                        float: left;
-                        height: 22px;
-                        margin: 1px 1px 0px 1px;
-                        background: #fff;
-                        padding: 0 9px;
-                        width: auto;
-                }
-
-                .danpinColorTitle {
-                        float: left;
-                        color: #666666;
-                        line-height: 22px;
-                        padding-bottom: 10px;
-                }
-
-                .full .selColor {
-                        width: 525px;
-                        float: left;
-                        padding: 0;
-                }
-
-                .selColor li {
-                        cursor: pointer;
-                        border: 1px solid #B4B4B4;
-                        display: inline;
-                        float: left;
-                        height: 40px;
-                        margin: 0px 8px 8px 0px;
-                        width: 95px;
-                        /* position: relative; */
-                }
-
-                a:link,
-                a:visited {
-                        color: #333;
-                        text-decoration: none;
-                }
-
-                .colorBlock span {
-                        display: block;
-                        float: left;
-                        width: 36px;
-                        height: 36px;
-                        margin: 1px 0px 0px 1px;
-                        overflow: hidden;
-                        cursor: pointer;
-                }
-
-                .colorBlock p {
-                        color: #666;
-                        display: inline;
-                        float: left;
-                        line-height: 16px;
-                        margin-left: 6px;
-                        padding-top: 4px;
-                        width: 46px;
-                        overflow: hidden;
-                        height: 34px;
-                        cursor: pointer;
-                }
-
-                .selColor li .colorHoverok {
-                        display: none;
-                        width: 14px;
-                        height: 13px;
-                        background: url(//i1.vanclimg.com/item/sprite0725.png) no-repeat scroll;
-                        background-position: -1151px 0;
-                        position: absolute;
-                        right: 1px;
-                        bottom: 1px;
-                        _right: 0px;
-                } */
-
         </style>
 </head>
 
@@ -487,9 +367,30 @@
                         */
                 </script>
 
-                <div class="toplitle">
+                <div class="toplitle" style="background: white;">
                         <h3 class="titl"></h3>
+                        <div class="AddtoCar fr">
+                                <a href="#ProductTitleHide" class="cartab" id="hidCartab"></a>
+                            </div>
                 </div>
+                <script>
+                // 吸顶效果
+                window.addEventListener("scroll", (e) => {
+                    let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+                    let offsetTop = document.querySelector('.toplitle').offsetTop;
+                    console.log(scrollTop);
+                    if (scrollTop > 660) {
+                        document.querySelector('.toplitle').style.position = "fixed";
+                        document.querySelector('.toplitle').style.top = "0";
+                        document.querySelector('.toplitle').style.left = "158px";
+                        document.querySelector('.AddtoCar').style.display = "block";
+                    } else {
+                        document.querySelector('.toplitle').style.position = "";
+                        document.querySelector('.toplitle').style.top = "";
+                        document.querySelector('.AddtoCar').style.display = "none";
+                    }
+                })
+                </script>
                 <div class="xiangqing">
                         <div class="amplification">
                                 <!-- 放大镜js -->
@@ -843,6 +744,19 @@
 
                                 })
                         </script>
+                </div>
+                <div class="botp">
+                        <img src="http://i.vanclimg.com/cms/20191009/6386633_02.jpg" alt="">
+                        <img src="http://i.vanclimg.com/cms/20191009/6386633_03.jpg" alt="">
+                        <img src="http://i.vanclimg.com/cms/20191009/6386633_10.jpg" alt="">
+                        <img src="http://i.vanclimg.com/cms/20191009/6386633_11.jpg" alt="">
+                        <img src="http://i.vanclimg.com/cms/20191009/6386633_14.jpg" alt="">
+                        <img src="http://i.vanclimg.com/cms/20191009/6386633_16.jpg" alt="">
+                        <img src="http://i.vanclimg.com/cms/20191009/6386633_17.jpg" alt="">
+                        <img src="http://i.vanclimg.com/cms/20191009/6386633_18.jpg" alt="">
+                        <img src="http://i.vanclimg.com/cms/20191009/6386633_25.jpg" alt="">
+                        <img src="http://i.vanclimg.com/cms/20191009/6386633_27.jpg" alt="">
+                        <img src="http://i.vanclimg.com/cms/20191009/6386633_28.jpg" alt="">
                 </div>
         </main>
         <!--  -->

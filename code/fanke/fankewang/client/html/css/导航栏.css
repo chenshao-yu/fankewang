@@ -2,7 +2,9 @@
     padding: 0;
     margin: 0;
 }
-
+main{
+    overflow: hidden;
+}
 .headerTop {
     width: 1200px;
     margin: 0 auto;
@@ -213,6 +215,12 @@ li {
 .subNav{
     background: white;
     position: absolute;
+}
+.subNav ul {
+    overflow: hidden;
+    border-right: 1px solid #f0f0f0;
+    border-left: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
 }
 .subNav span {
     display: block;

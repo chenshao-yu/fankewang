@@ -215,9 +215,13 @@ li {
     background: white;
     position: absolute;
 }
-.subNav ul li{
-    border: 1px solid #dadadb;
+.subNav ul{
+    overflow: hidden;
+    border-right: 1px solid #f0f0f0;
+    border-left: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
 }
+
 .subNav span {
     display: block;
     width: 100%;
