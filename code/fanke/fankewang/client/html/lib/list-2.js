@@ -55,13 +55,15 @@ $(() => {
                     </div>
                     <div class="title">${ele.title}</div>
                     <div class="price ">售价￥<strong>${ele.sprice}</strong></div>
-               
+                    <div class="bighover"><img src=${ele.img}><div class="title">${ele.title}</div>
+                    <div class="shoujia"><div class="price2">售价￥${ele.sprice}</div><span>好评率<strong>100%</strong></span></div>
+                    </div>
             </li>
         `
         }).join("");
         let oul = `<ul>${html}</ul>`
         $(".Listpp").html(oul);
-        
+
     }
     /* 先给页面添加点击事件，当点击的时候获取页码值，根据该值发送网络请求 */
     let next = 0;
@@ -119,6 +121,19 @@ $(() => {
         }
     })
 
+    // 列表鼠标滑过显示大图
+    $(".Listpp").on("mouseenter",".item",function(){
+         console.log($(this));
+
+        $(this).children(".bighover").css("display", "block")
+    })
+    $(".Listpp").on("mouseleave",".item",function(){
+        console.log($(this));
+
+       $(this).children(".bighover").css("display", "none")
+   })
+    
+
     /**点击列表商品获取数据并跳转至详情页 */
     $(".Listpp").on("click", ".item", function () {
         let srcx = $(this).children(".tupian")[0].querySelector("img").src
@@ -127,8 +142,9 @@ $(() => {
         let titl = $(this).children(".title").text()
         let urlx = `src=${srcx}&qg=${qgx}&title=${titl}&gg=${ggx}`;
         console.log(urlx);
-        window.location.href="http://127.0.0.1/code/fanke/fankewang/client/html/details.html?"+urlx;
+        window.location.href = "http://127.0.0.1/code/fanke/fankewang/client/html/details.html?" + urlx;
     })
+
 
 
 })
