@@ -1,3 +1,6 @@
+body,html{
+    overflow-x: hidden ;
+}
 .Listpp{
     width: 1200px;
     margin: auto;

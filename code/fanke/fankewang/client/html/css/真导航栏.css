@@ -335,7 +335,7 @@ p.onlineCustomer {
     position: fixed;
     right: 10px;
     bottom: 20px;
-    z-index: 10
+    z-index: 100000;
 }
 /* 导航栏下面的以小行 */
 .clearfix{
