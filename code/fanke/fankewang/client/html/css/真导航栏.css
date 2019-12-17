@@ -215,7 +215,9 @@ li {
     background: white;
     position: absolute;
 }
-
+.subNav ul li{
+    border: 1px solid #dadadb;
+}
 .subNav span {
     display: block;
     width: 100%;

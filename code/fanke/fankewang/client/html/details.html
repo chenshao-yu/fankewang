@@ -16,6 +16,126 @@
         <!-- <script src="../html/lib/detail.js"></script> -->
 
         <style>
+                
+                /* .selSizeArea {
+                        overflow: hidden;
+                        margin-bottom: 15px;
+                        margin-top: 12px;
+                        *margin: 6px 0px 0px 0px;
+                        _zoom: 1;
+                }
+
+                .danpinColorTitle {
+                        float: left;
+                        color: #666666;
+                        line-height: 22px;
+                        padding-bottom: 10px;
+                }
+
+                .selSize {
+                        width: 335px;
+                        float: left;
+                }
+
+                .selSizeArea ul {
+                        margin: 0px;
+                }
+
+                .selSizeArea .selSize ul li {
+                        background: #FFFFFF;
+                        border: 1px solid #C8C8C8;
+                        color: #333333;
+                        cursor: pointer;
+                        padding: 0px;
+                        display: inline;
+                        float: left;
+                        height: 24px;
+                        line-height: 22px;
+                        margin-right: 5px;
+                        margin-bottom: 5px;
+                        text-align: center;
+                        /* position: relative; */
+                        *margin-bottom: 8px;
+                        *float: none;
+                        *display: inline-block;
+                        *display: inline;
+                        *zoom: 1;
+                }
+
+                .selSizeArea .selSize ul li p {
+                        display: block;
+                        float: left;
+                        height: 22px;
+                        margin: 1px 1px 0px 1px;
+                        background: #fff;
+                        padding: 0 9px;
+                        width: auto;
+                }
+
+                .danpinColorTitle {
+                        float: left;
+                        color: #666666;
+                        line-height: 22px;
+                        padding-bottom: 10px;
+                }
+
+                .full .selColor {
+                        width: 525px;
+                        float: left;
+                        padding: 0;
+                }
+
+                .selColor li {
+                        cursor: pointer;
+                        border: 1px solid #B4B4B4;
+                        display: inline;
+                        float: left;
+                        height: 40px;
+                        margin: 0px 8px 8px 0px;
+                        width: 95px;
+                        /* position: relative; */
+                }
+
+                a:link,
+                a:visited {
+                        color: #333;
+                        text-decoration: none;
+                }
+
+                .colorBlock span {
+                        display: block;
+                        float: left;
+                        width: 36px;
+                        height: 36px;
+                        margin: 1px 0px 0px 1px;
+                        overflow: hidden;
+                        cursor: pointer;
+                }
+
+                .colorBlock p {
+                        color: #666;
+                        display: inline;
+                        float: left;
+                        line-height: 16px;
+                        margin-left: 6px;
+                        padding-top: 4px;
+                        width: 46px;
+                        overflow: hidden;
+                        height: 34px;
+                        cursor: pointer;
+                }
+
+                .selColor li .colorHoverok {
+                        display: none;
+                        width: 14px;
+                        height: 13px;
+                        background: url(//i1.vanclimg.com/item/sprite0725.png) no-repeat scroll;
+                        background-position: -1151px 0;
+                        position: absolute;
+                        right: 1px;
+                        bottom: 1px;
+                        _right: 0px;
+                } */
 
         </style>
 </head>
@@ -549,8 +669,109 @@
                         </div>
                         <div class="shoppingcart">
                                 <div class="jiage">特惠价：￥<span id="qgx"></span> 充100反100，点击充值</div>
-                                <div class="Color">颜色：</div>
-                                <div class="Size">尺码： </div>
+                                <div class="Color">
+                                        <div class="danpinColor_Select">
+                                                <div class="danpinColorTitle" style="line-height: 18px;">
+                                                        <p>
+                                                                颜色：</p>
+                                                </div>
+                                                <div class="selColor">
+                                                        <ul>
+
+                                                                <li name="6386632" title="浅灰" class="">
+
+                                                                        <div class="colorBlock" name="False">
+                                                                                <a class="track"
+                                                                                        name="item-item-select-color_1">
+                                                                                        <span class="SpriteColors"
+                                                                                                style="background-position: 0px -0px"><img
+                                                                                                        src=""></span>
+                                                                                        <p>
+                                                                                                浅灰</p>
+                                                                                </a>
+                                                                        </div>
+
+                                                                </li>
+
+                                                                <li id="onlickColor" name="6386633" title="黑色" class="">
+
+                                                                        <div class="colorBlock" name="False">
+                                                                                <a class="track"
+                                                                                        name="item-item-select-color_2">
+                                                                                        <span class="SpriteColors"
+                                                                                                style="background-position: 0px -36px"><img
+                                                                                                        src=""></span>
+                                                                                        <p>
+                                                                                                黑色</p>
+                                                                                </a>
+                                                                        </div>
+
+                                                                        <span class="colorHoverok"></span>
+
+                                                                </li>
+
+                                                                <li name="6386634" title="粉色">
+
+                                                                        <div class="colorBlock" name="False">
+                                                                                <a class="track"
+                                                                                        name="item-item-select-color_3">
+                                                                                        <span class="SpriteColors"
+                                                                                                style="background-position: 0px -72px"><img
+                                                                                                        src=""></span>
+                                                                                        <p>
+                                                                                                粉色</p>
+                                                                                </a>
+                                                                        </div>
+
+                                                                </li>
+
+                                                        </ul>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="Size">
+                                        <div class="selSizeArea">
+                                                <div class="danpinColorTitle">
+                                                        <p>
+                                                                尺码：</p>
+                                                </div>
+                                                <div class="selSize">
+                                                        <ul>
+                                                                <li name="15818097" class="">
+                                                                        <p>
+                                                                                S</p>
+                                                                </li>
+                                                                <li name="15818098" class="">
+                                                                        <p>
+                                                                                M</p>
+                                                                </li>
+                                                                <li name="15818099">
+                                                                        <p>
+                                                                                L</p>
+                                                                </li>
+                                                                <li name="15818100">
+                                                                        <p>
+                                                                                XL</p>
+                                                                </li>
+                                                        </ul>
+                                                </div>
+                                                <script>
+                                                        //尺寸框选中改变边框颜色
+                                                        $(".selSize ul li").click(function () {
+                                                                $(this).css("border-color", "#b52024")
+                                                                        .siblings().css("border-color",
+                                                                                "#C8C8C8")
+                                                        })
+                                                </script>
+                                                <div class="danpin_xuanzeGMcm" style="display:none;">
+                                                        <span style="height: 16px; display: block; width: 16px; background-position: -1911px 0pt; margin: 2px;float: left; "
+                                                                class="sprites"></span>
+                                                        <p>
+                                                                请选择您要购买的商品尺码</p>
+                                                </div>
+
+                                        </div>
+                                </div>
                                 <div class="Count">数量：
                                         <select id="selectedAmount">
                                                 <option value="1">
@@ -604,14 +825,23 @@
                                         </div>
                                 </div>
                         </div>
-                        <script>//设置标题跟价格
+                        <script>
+                                //设置标题跟价格
                                 $(".titl").text(data1.title)
-
+                                $(".SpriteColors>img")[0].src = data1.src
+                                $(".SpriteColors>img")[1].src = data1.src
+                                $(".SpriteColors>img")[2].src = data1.src
                                 if (data1.qg != "") {
                                         $("#qgx").text(data1.qg)
                                 } else {
                                         $("#qgx").text(data1.gg)
                                 }
+                                $(".selColor>ul>li").click(function () {
+                                        $(this).css("border", "2px solid #b52024").siblings().css(
+                                                "border", "1px solid #B4B4B4")
+                                        console.log("aaa");
+
+                                })
                         </script>
                 </div>
         </main>

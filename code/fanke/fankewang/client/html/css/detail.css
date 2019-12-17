@@ -125,7 +125,7 @@
 
 .Color {
     width: 450px;
-    height: 100px;
+    height:50px;
     color: #808080;
     font-size: 12px;
     /* background: rebeccapurple; */
@@ -241,3 +241,122 @@
     padding: 0 8px;
 }
 /*       */
+.selSizeArea {
+    overflow: hidden;
+    margin-bottom: 15px;
+    margin-top: 12px;
+    *margin: 6px 0px 0px 0px;
+    _zoom: 1;
+}
+
+.danpinColorTitle {
+    float: left;
+    color: #666666;
+    line-height: 22px;
+    padding-bottom: 10px;
+}
+
+.selSize {
+    width: 335px;
+    float: left;
+}
+
+.selSizeArea ul {
+    margin: 0px;
+}
+
+.selSizeArea .selSize ul li {
+    background: #FFFFFF;
+    border: 1px solid #C8C8C8;
+    color: #333333;
+    cursor: pointer;
+    padding: 0px;
+    display: inline;
+    float: left;
+    height: 24px;
+    line-height: 22px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    /* position: relative; */
+    *margin-bottom: 8px;
+    *float: none;
+    *display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+.selSizeArea .selSize ul li p {
+    display: block;
+    float: left;
+    height: 22px;
+    margin: 1px 1px 0px 1px;
+    background: #fff;
+    padding: 0 9px;
+    width: auto;
+}
+
+.danpinColorTitle {
+    float: left;
+    color: #666666;
+    line-height: 22px;
+    padding-bottom: 10px;
+}
+
+.full .selColor {
+    width: 525px;
+    float: left;
+    padding: 0;
+}
+
+.selColor li {
+    cursor: pointer;
+    border: 1px solid #B4B4B4;
+    display: inline;
+    float: left;
+    height: 40px;
+    margin: 0px 8px 8px 0px;
+    width: 95px;
+    /* position: relative; */
+}
+
+a:link,
+a:visited {
+    /* color: #333; */
+    text-decoration: none;
+}
+
+.colorBlock span {
+    display: block;
+    float: left;
+    width: 36px;
+    height: 36px;
+    margin: 1px 0px 0px 1px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.colorBlock p {
+    color: #666;
+    display: inline;
+    float: left;
+    line-height: 16px;
+    margin-left: 6px;
+    padding-top: 4px;
+    width: 46px;
+    overflow: hidden;
+    height: 34px;
+    cursor: pointer;
+}
+
+.selColor li .colorHoverok {
+    display: none;
+    width: 14px;
+    height: 13px;
+    background: url(//i1.vanclimg.com/item/sprite0725.png) no-repeat scroll;
+    background-position: -1151px 0;
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+    _right: 0px;
+}
