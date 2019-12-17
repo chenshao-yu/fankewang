@@ -8,6 +8,7 @@
         <title>详情页</title>
         <!-- <link rel="icon" href="../html/img/11.ico" type="image/x-icon"> -->
         <script src="./jquery-3.4.1.js"></script>
+        <link rel="icon" href="../html/img/yasuo.ico" type="image/x-icon">
         <link rel="stylesheet" href="../html/css/导航栏.css">
         <link rel="stylesheet" href="../html/css/detail.css">
         <script src="../html/lib/lun.js"></script>
@@ -16,7 +17,7 @@
         <!-- <script src="../html/lib/detail.js"></script> -->
 
         <style>
-                
+
         </style>
 </head>
 
@@ -93,7 +94,7 @@
                 </div>
                 <div class="navlist clear" id="mainNavBox" style="z-index:300!important;">
                         <ul class="daohanglan">
-                                <li class="vancllogo_Con" style="text-align: left;"><a href="http://www.vancl.com"><img
+                                <li class="vancllogo_Con" style="text-align: left;"><a href="http://127.0.0.1/code/fanke/fankewang/client/html/shouye.html"><img
                                                         src="../html/img/logo.jpg" alt=""></a></li>
                                 <li><a href="http://127.0.0.1/code/fanke/fankewang/client/html/shouye.html">首页</a><span
                                                 class="NavLine"></span></li>
@@ -371,25 +372,26 @@
                         <h3 class="titl"></h3>
                         <div class="AddtoCar fr">
                                 <a href="#ProductTitleHide" class="cartab" id="hidCartab"></a>
-                            </div>
+                        </div>
                 </div>
                 <script>
-                // 吸顶效果
-                window.addEventListener("scroll", (e) => {
-                    let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-                    let offsetTop = document.querySelector('.toplitle').offsetTop;
-                    console.log(scrollTop);
-                    if (scrollTop > 660) {
-                        document.querySelector('.toplitle').style.position = "fixed";
-                        document.querySelector('.toplitle').style.top = "0";
-                        document.querySelector('.toplitle').style.left = "158px";
-                        document.querySelector('.AddtoCar').style.display = "block";
-                    } else {
-                        document.querySelector('.toplitle').style.position = "";
-                        document.querySelector('.toplitle').style.top = "";
-                        document.querySelector('.AddtoCar').style.display = "none";
-                    }
-                })
+                        // 吸顶效果
+                        window.addEventListener("scroll", (e) => {
+                                let scrollTop = document.documentElement.scrollTop || document.body
+                                        .scrollTop;
+                                let offsetTop = document.querySelector('.toplitle').offsetTop;
+                                console.log(scrollTop);
+                                if (scrollTop > 660) {
+                                        document.querySelector('.toplitle').style.position = "fixed";
+                                        document.querySelector('.toplitle').style.top = "0";
+                                        document.querySelector('.toplitle').style.left = "158px";
+                                        document.querySelector('.AddtoCar').style.display = "block";
+                                } else {
+                                        document.querySelector('.toplitle').style.position = "";
+                                        document.querySelector('.toplitle').style.top = "";
+                                        document.querySelector('.AddtoCar').style.display = "none";
+                                }
+                        })
                 </script>
                 <div class="xiangqing">
                         <div class="amplification">
