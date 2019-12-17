@@ -95,14 +95,16 @@ text-align: center;
     margin: 5px;
     width: 240px;
     height: 350px;
-    border: 1px solid #efefef;
+    /* border: 1px solid #efefef; */
     float: left;
 }
 
-.item:hover {
-    border: 1px solid red;
+.tupian img:hover {
+    border: 1px solid #b81c22;
 }
-
+.tupian img{
+    border: 1px solid #efefef;
+}
 .item-box {
     text-align: center
 }

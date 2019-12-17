@@ -88,7 +88,7 @@ $(() => {
         }
         yema(next, defaulval);
         $("#page>a").eq(next - 1).addClass("active").siblings().removeClass("active");
-        console.log(next);
+        
 
     })
     $(".nexts").click(function () {
@@ -98,7 +98,7 @@ $(() => {
         }
         yema(next, defaulval);
         $("#page>a").eq(next - 1).addClass("active").siblings().removeClass("active");
-        console.log(next);
+       
 
     })
     //下一页
@@ -108,7 +108,7 @@ $(() => {
             next == 2
             yema(next, defaulval);
             $("#page>a").eq(next - 1).addClass("active").siblings().removeClass("active");
-            console.log(next);
+           
         }
     })
     $(".nextx").click(function () {
@@ -117,19 +117,15 @@ $(() => {
             next == 2
             yema(next, defaulval);
             $("#page>a").eq(next - 1).addClass("active").siblings().removeClass("active");
-            console.log(next);
+            
         }
     })
 
     // 列表鼠标滑过显示大图
     $(".Listpp").on("mouseenter",".item",function(){
-         console.log($(this));
-
         $(this).children(".bighover").css("display", "block")
     })
     $(".Listpp").on("mouseleave",".item",function(){
-        console.log($(this));
-
        $(this).children(".bighover").css("display", "none")
    })
     
@@ -141,7 +137,7 @@ $(() => {
         let ggx = $(this).children().children("strong").text()
         let titl = $(this).children(".title").text()
         let urlx = `src=${srcx}&qg=${qgx}&title=${titl}&gg=${ggx}`;
-        console.log(urlx);
+        
         window.location.href = "http://127.0.0.1/code/fanke/fankewang/client/html/details.html?" + urlx;
     })
 

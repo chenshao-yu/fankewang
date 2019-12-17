@@ -6,14 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>列表页</title>
-        <link rel="icon" href="../html/img/11.ico" type="image/x-icon">
+        <link rel="icon" href="../html/img/sy.ico" type="image/x-icon">
         <script src="./jquery-3.4.1.js"></script>
         <link rel="stylesheet" href="../html/css/真导航栏.css">
         <link rel="stylesheet" href="../html/css/list2.css">
         <script src="../html/lib/list-2.js"></script>
 </head>
 <style>
-        
+
 </style>
 
 <body>
@@ -347,16 +347,16 @@
                                 <div class="btn-class">
                                         <ul>
                                                 <!-- <li>销量<span></span></li>
-            <li>好评<span></span></li>
-            <li>最新<span></span></li> -->
+                                                     <li>好评<span></span></li>
+                                                     <li>最新<span></span></li> -->
                                                 <li><span class="typeBtn" data-type="default">默认</span><i></i></li>
                                                 <li><span class="typeBtn" data-type="desc">按照价格从高到低</span><i></i></li>
                                                 <li><span class="typeBtn" data-type="asc">按照价格从低到高</span><i></i></li>
                                         </ul>
                                 </div>
                         </div>
+                        <!-- 吸顶效果 -->
                         <script>
-                                // 吸顶效果
                                 window.addEventListener("scroll", (e) => {
                                         let scrollTop = document.documentElement.scrollTop || document
                                                 .body.scrollTop;
@@ -376,15 +376,7 @@
                 </div>
                 <!-- js渲染列表页 -->
                 <div class="Listpp"></div><!-- ！！！ -->
-                <script>
-                        
-                        
-                $(".item").mouseenter(function(){
-                        console.log($(this));
-                        console.log("sss");
-                        $(this).children(".bighover").css("display","block")
-                })
-                </script>
+
         </main>
 
 
