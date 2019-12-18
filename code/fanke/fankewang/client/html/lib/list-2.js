@@ -137,7 +137,7 @@ $(() => {
         let ggx = $(this).children().children("strong").text()
         let titl = $(this).children(".title").text()
         let urlx = `src=${srcx}&qg=${qgx}&title=${titl}&gg=${ggx}`;
-        
+       
         window.location.href = "http://127.0.0.1/code/fanke/fankewang/client/html/details.html?" + urlx;
     })
 

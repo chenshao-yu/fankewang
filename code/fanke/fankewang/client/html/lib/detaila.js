@@ -120,7 +120,7 @@ class fadManager {
                         // src=http://p2.vanclimg.com/300/300/product/6/3/8/6386633/mid/6386633-1j201910101056222379.jpg&qg=267&title=凡客基础多色家居套装 女款 黑色
                         /* 对查询字符串进行转码和切割(去除问号) */
                         let str = decodeURI(window.location.search.slice(1))
-                        console.log(str);
+                       
                         /* 设计函数：name=zs & age=10&className=H5 */
                         function queryStringObj(queryString) {
                                 var o = {};
@@ -130,7 +130,6 @@ class fadManager {
                                         var data1 = item.split("=");
                                         var key = data1[0];
                                         var val = data1[1];
-                                        
                                         o[key] = val;
                                 })
                                 return o;
