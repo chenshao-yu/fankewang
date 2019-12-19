@@ -94,7 +94,8 @@
                 </div>
                 <div class="navlist clear" id="mainNavBox" style="z-index:300!important;">
                         <ul class="daohanglan">
-                                <li class="vancllogo_Con" style="text-align: left;"><a href="http://127.0.0.1/code/fanke/fankewang/client/html/shouye.html"><img
+                                <li class="vancllogo_Con" style="text-align: left;"><a
+                                                href="http://127.0.0.1/code/fanke/fankewang/client/html/shouye.html"><img
                                                         src="../html/img/logo.jpg" alt=""></a></li>
                                 <li><a href="http://127.0.0.1/code/fanke/fankewang/client/html/shouye.html">首页</a><span
                                                 class="NavLine"></span></li>
@@ -398,9 +399,17 @@
                                 <script>
                                         //放大镜
                                         var data = {
-                                                mins: [],
-                                                maxs: []
+                                                mins: ["", "http://p2.vanclimg.com/product/6/3/8/6386633/mid/6386633-2201910101056222379.jpg",
+                                                        "http://p2.vanclimg.com/product/6/3/8/6386633/mid/6386633-3201910101056222379.jpg",
+                                                        "http://p2.vanclimg.com/product/6/3/8/6386633/mid/6386633-4201910101056222379.jpg"
+                                                ],
+                                                maxs: ["", "http://p2.vanclimg.com/product/6/3/8/6386633/mid/6386633-2201910101056222379.jpg",
+                                                        "http://p2.vanclimg.com/product/6/3/8/6386633/mid/6386633-3201910101056222379.jpg",
+                                                        "http://p2.vanclimg.com/product/6/3/8/6386633/mid/6386633-4201910101056222379.jpg"]
                                         }
+                                        //s用于下面的遮罩索引引用
+                                        let s = 0
+                                        let inn = data.maxs.map(()=> s++)
                                         data.mins[0] = data1.src
                                         data.maxs[0] = data1.src
 
@@ -410,7 +419,7 @@
                                                         this.data = data;
                                                         this.root = null;
                                                         // 当前遮罩对应的索引
-                                                        this.mask = 1;
+                                                        this.mask = s;
                                                         // box的边框
                                                         this.border = 1;
                                                 }
@@ -741,8 +750,6 @@
                                 $(".selColor>ul>li").click(function () {
                                         $(this).css("border", "2px solid #b52024").siblings().css(
                                                 "border", "1px solid #B4B4B4")
-                                        console.log("aaa");
-
                                 })
                         </script>
                 </div>
