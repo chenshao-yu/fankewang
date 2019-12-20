@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../html/img/cart.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="../html/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="../html/css/base_px.css">
+    <link rel="stylesheet" href="../html/css/reset.css">
+    <link rel="stylesheet" href="../html/css/carts.css">
+    <script src="../html/lib/carts.js"></script>
+    <title>购物车</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .bigbox {
+            width: 980px;
+            margin: auto;
+            /* background: red; */
+        }
+
+        .top {
+            width: 980px;
+            height: 40px;
+            margin: auto;
+            padding-top: 15px;
+            border-bottom: 1px solid rgb(201, 201, 201);
+        }
+
+        .logo {
+            float: left;
+            width: 311px;
+            height: 39px;
+        }
+
+        .logo img {
+            width: 100%;
+        }
+
+        .toprigth {
+            float: right;
+            width: 400px;
+            height: 55px;
+        }
+
+        .toprigth p {
+            float: left;
+            color: #333;
+            font-size: 12px;
+        }
+
+        .toprigth p a {
+            color: #a10000;
+            padding: 0 5px;
+            line-height: 40px;
+        }
+
+        .help {
+            line-height: 14px;
+            font-size: 12px;
+            margin-left: 5px;
+            float: right;
+            color: #333;
+        }
+
+        #location {
+            background: url(//ssl.vanclimg.com/shopping/newpromotions/newProm.gif);
+            background-position: 0 0;
+            height: 28px;
+            width: 540px;
+            margin-top: 10px;
+        }
+
+
+
+        #location em,
+        #location span {
+            color: #666;
+            display: inline-block;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 28px;
+            text-align: center;
+            width: 170px;
+            font-style: normal;
+        }
+
+        #location em,
+        #location em a {
+            color: #fff;
+        }
+
+        #footer {
+            color: #999;
+            padding: 10px 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #footer p {
+            margin-bottom: 20px;
+            font-size: 12px;
+        }
+
+        .ectrustprc {
+            width: 156px;
+            height: 46px;
+        }
+
+        .ectrustprc,
+        .costumeorg,
+        .online315 {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .costumeorg {
+            width: 156px;
+            height: 45px;
+        }
+
+        .online315 {
+            width: 96px;
+            height: 42px;
+        }
+
+        .cart {
+            min-height: 200px;
+        }
+
+        /*------------------*/
+        .list_delall{
+            cursor: pointer;
+        }
+        .userInfo{
+            color: rgb(0, 157, 255);
+        }
+        .status{
+            color: #a10000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bigbox">
+        <div class="top">
+            <div class="logo"><img src="http://i2.vanclimg.com/cms/20140829/vancl-logo.png"></div>
+            <div class="toprigth">
+                <p>您好，欢迎光临凡客诚品。<div class="c_head clearfix">
+                    <div class="user">
+                        <span class="userInfo"></span>
+                        <span class="status">登录</span>
+                    </div>
+    
+                </div></p>
+                <span class="help">帮助中心</span>
+            </div>
+        </div>
+        <div id="location">
+            <em>1.我的购物车</em> <span>2.填写核对信息单</span> <span>3.成功提交订单</span>
+        </div>
+
+
+        <!-- 主体部分 -->
+        <div class="cart">
+            
+            <!--  -->
+            <section class="cartMain">
+                <div class="cartMain_hd">
+                    <ul class="order_lists cartTop">
+                        <li class="list_chk">
+                            <input type="checkbox" id="all" class="whole_check">
+                            <label for="all"></label> 全选
+                        </li>
+                        <li class="list_con">商品信息</li>
+                        <li class="list_price">单价</li>
+                        <li class="list_amount">数量</li>
+                        <li class="list_sum">金额</li>
+                        <li class="list_op">操作</li>
+                    </ul>
+                </div>
+
+                <div class="bar-wrapper">
+                    <div class="bar-left">
+                        <!-- <li class="list_chk">
+                            <input type="checkbox" id="all2" class="whole_check">
+                            <label for="all2"></label> 全选
+                        </li> -->
+                        <li class="list_delall"><a>清空购物车</a> </li>
+                    </div>
+                    <div class="bar-right">
+                        <div class="piece">已选商品<strong class="piece_num">0</strong>件</div>
+                        <div class="totalMoney">共计: <strong class="total_text">0.00</strong></div>
+                        <div class="goshop"><a href="http://127.0.0.1/code/fanke/fankewang/client/html/Thelist2.html">继续购物</a></div>
+                        <div class="calBtn"><a href="#">结算</a></div>
+                    </div>
+                </div>
+            </section>
+            <section class="model_bg"></section>
+            <section class="my_model">
+                <p class="title">删除宝贝<span class="closeModel">X</span></p>
+                <p>您确认要删除该宝贝吗？</p>
+                <div class="opBtn"><a href="javascript:;" class="dialog-sure">确定</a><a href="javascript:;"
+                        class="dialog-close">关闭</a></div>
+            </section>
+        </div>
+        <!--  -->
+        <script>
+            /******清空购物车****/
+            $(".list_delall").click(function () {
+                $(".delBtn").trigger('click');
+            })
+        </script>
+
+        <div id="footer">
+            <p class="copyrights">Copyright 2007 - 2019 vancl.com All Rights Reserved 京ICP证100557号 京公网安备11010102000579号
+                出版物经营许可证新出发京批字第直110138号</p>
+            <p class="certs">
+                <a class="ectrustprc" title="中国电子商务诚信单位" href="http://www.ectrustprc.org.cn/seal/splash/1000020.htm"
+                    target="_blank">
+                    <img alt="中国电子商务诚信单位" src="//ssl.vanclimg.com/shopping/cert-redlogo.gif">
+                </a>
+                <span class="costumeorg" title="中国服装协会会员单位">
+                    <img alt="中国服装协会会员单位" src="//ssl.vanclimg.com/shopping/cert-costumeorg.gif">
+                </span>
+                <a class="online315" href="http://www.315online.com.cn/member/315090053.html" title="网上交易保障中心"
+                    target="_blank">
+                    <img alt="网上交易保障中心" src="//ssl.vanclimg.com/shopping/cert-wsjybzzx.gif">
+                </a>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

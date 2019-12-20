@@ -2,6 +2,7 @@
 .box {
     width: 400px;
     height: 400px;
+    left: 130px;
     border: 1px solid #ccc;
     /* margin: 50px auto; */
     position: relative;

@@ -1,5 +1,5 @@
 $(()=>{
-    $("#phoneID").val("13457028888");
+    $("#phoneID").val("13456789101");
     $("#phoneyanID").val("12345")
     $("#passwordID").val("123456")
     $("#passwordB").val("123456")
@@ -40,13 +40,14 @@ let captcha1 = new Captcha({
     dotNum: 10,
     lineNum: 20,
     fontSize: 40,
-    length: 2,
-    // content: "我你她它塔谁睡水税"
+    length: 4,
+    // content: "自定义验证码字符"
 });
 let code;
 captcha1.draw(document.querySelector('#captcha'), r => {
     console.log(r, '验证码1');
     code = r.toUpperCase();
+    $("#yanz").val(r)
 });
 $("#yanz").blur(function() {
     if ($.trim($(this).val()).toUpperCase() != code) {
@@ -78,13 +79,14 @@ $("#yanz").blur(function() {
         
         var phoneNum = $("#phoneID").val();
         var passwordNum = $("#passwordID").val();
+        var phone = $("#yanz").val();
         console.log(phoneNum);
         console.log(passwordNum);
-        
+        if($(".phonespan").text()=="" && $("#yanz").text()=="" && $(".paswspan").text()=="" && $(".paswspanB").text()==""){
         $.ajax({
             type: "post",
             url: "http://127.0.0.1/code/fanke/fankewang/server/register.php",
-            data: {phoneNum,passwordNum},
+            data: {phoneNum,passwordNum,phone},
             dataType: "json",
             success: function (response) {
                 if(response.status == "ok") {
@@ -94,7 +96,10 @@ $("#yanz").blur(function() {
                     alert(response.data.msg);
                 }
             }
-        });
+        })}else{
+            alert("请输入正确的注册信息")
+        }
+        ;
         // $.ajax({
         //     type: "post",
         //     url: "http://127.0.0.1/code/fanke/fankewang/server/register.php",
