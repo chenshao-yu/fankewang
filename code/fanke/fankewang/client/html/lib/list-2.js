@@ -49,14 +49,14 @@ $(() => {
     // /* 渲染页面 */
     function renderUI(_data) {
         let html = _data.map((ele) => {
-            return `<li class="item">
-                    <div class="tupian"><img src=${ele.img}>
-                    <div class="qianggou">${ele.qianggou}</div>
+            return `<li class="item" data-id=${ele.good_id}>
+                    <div class="tupian"><img src=${ele.src}>
+                    <div class="qianggou">${ele.price}</div>
                     </div>
                     <div class="title">${ele.title}</div>
-                    <div class="price ">售价￥<strong>${ele.sprice}</strong></div>
-                    <div class="bighover"><img src=${ele.img}><div class="title">${ele.title}</div>
-                    <div class="shoujia"><div class="price2">售价￥${ele.sprice}</div><span>好评率<strong>100%</strong></span></div>
+                    <div class="price "><strong>${ele.disCount}</strong></div>
+                    <div class="bighover"><img src=${ele.src}><div class="title">${ele.title}</div>
+                    <div class="shoujia"><div class="price2">${ele.price}</div><span>好评率<strong>100%</strong></span></div>
                     </div>
             </li>
         `
@@ -132,11 +132,12 @@ $(() => {
 
     /**点击列表商品获取数据并跳转至详情页 */
     $(".Listpp").on("click", ".item", function () {
+        let good_id = $(this).data().id;
         let srcx = $(this).children(".tupian")[0].querySelector("img").src
         let qgx = $(this).children().children(".qianggou").text()
         let ggx = $(this).children().children("strong").text()
         let titl = $(this).children(".title").text()
-        let urlx = `src=${srcx}&qg=${qgx}&title=${titl}&gg=${ggx}`;
+        let urlx = `src=${srcx}&qg=${qgx}&title=${titl}&gg=${ggx}&id=${good_id}`;
        
         window.location.href = "http://127.0.0.1/code/fanke/fankewang/client/html/details.html?" + urlx;
     })

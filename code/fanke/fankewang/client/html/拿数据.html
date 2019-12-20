@@ -2027,15 +2027,20 @@
     <script>
 var box = document.querySelectorAll("#vanclproducts>ul>li");
         var res = []
+        
         for (i = 0; i < box.length; i++) {
             var item = box[i];
-            var o = {};
-            o.img = item.querySelector("img").src;
-            o.qianggou = item.querySelector(".pic").innerText;
-            o.title = item.querySelector("p").innerText;
-            o.sprice = item.querySelector(".Sprice>strong").innerText;
-
            
+            var o = {};
+            o.good_id=i
+            o.src= item.querySelector("img").src;
+            o.title = item.querySelector("p").innerText;
+            o.price = item.querySelector(".pic").innerText;
+            o.disCount = item.querySelector(".Sprice>strong").innerText;
+            o.shopName = "凡客诚品"
+           if(o.price==""){
+            o.price = o.disCount
+           }
 
             res.push(o)
         }

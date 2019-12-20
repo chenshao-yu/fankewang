@@ -55,7 +55,7 @@
                                         <p><a id="shoppingcar_link" rel="nofollow" href="http://127.0.0.1/code/fanke/fankewang/client/html/shoppingCart.html"
                                                         name="hp-hp-head-cart-v:n:t"
                                                         class="shopborder track cartab">购物车(<span
-                                                                car_product_total="shoppingCar_product_totalcount">0</span>)</a><s></s>
+                                                                car_product_total="shoppingCar_product_totalcount" class="cart_total">0</span>)</a><s></s>
                                         </p>
 
                                 </div>
@@ -768,7 +768,55 @@
                 </div>
         </main>
         <!-- 购物车js -->
+<script>
+ /* 实现点击添加商品到购物车的功能 */
+    $(".Buy").on("click", ".Addcart", function() {
+        /* 检查是否已经登录 ，如果没有登录那就跳转到登录页面*/
+        if (!localStorage.username) {
+            window.location.href = "./login.html";
+        }
+        // console.log(localStorage.username);
+        
+        /* 获取当前商品的ID */
+        let good_id = data1.id
+        console.log(good_id);
+        /* 发送网络请求把当前数据添加到购物车表中 */
+        /* 数据库表 cart_id  good_id  num isChecked */
+        /* 添加数据： */
+        /* 删除数据： */
+        /* 更新数据： */
+        $.ajax({
+            url: "http://127.0.0.1/code/fanke/fankewang/server/cart.php",
+            data: { type: "add", good_id: good_id, id: localStorage.id },
+            dataType: "json",
+            success: function(response) {
+                if (response.status == "success") {
+                    $(".cart_total").text($(".cart_total").text() * 1 + 1);
+                }
+            }
+        });
+    })
 
+    /* 发请求获取购物车中商品的数量 */
+    /* 检查登录状态，如果已经登录那么就请求获取购物车的数量 */
+    if (localStorage.id) {
+        $.ajax({
+            url: "http://127.0.0.1/code/fanke/fankewang/server/getTotalCount.php",
+            data: {
+                id: localStorage.id
+            },
+            dataType: "json",
+            success: function({ total }) {
+                // console.log(total);
+                $(".shoppingCar_product_totalcount").text(total);
+            }
+        });
+    }
+
+    /* 打开购物车页面 */
+    $("#shoppingcar_link").click(() => window.location.href = "./shoppingCart.html");
+
+</script>
 
         
         <!-- 底部 -->
